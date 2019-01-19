@@ -22,3 +22,19 @@
 // Output Format
 
 // Return the total number of matching pairs of socks that John can sell.
+
+function sockMerchant(n, ar) {
+  ar.sort(function(a, b) {
+    return a - b;
+  });
+  var counter = 0;
+  for (let i of ar) {
+    if (ar[i] === ar[i + 1]) {
+      console.log(ar[i]);
+      counter += 1;
+    }
+  }
+  return counter;
+}
+
+sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]);
