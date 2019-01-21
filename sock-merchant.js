@@ -28,10 +28,12 @@ function sockMerchant(n, ar) {
     return a - b;
   });
   var counter = 0;
-  for (let i of ar) {
+  for (var i = 0; i < ar.length; i++) {
     if (ar[i] === ar[i + 1]) {
       console.log(ar[i]);
       counter += 1;
+
+      i++;
     }
   }
   return counter;
