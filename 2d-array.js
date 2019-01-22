@@ -1,0 +1,1 @@
+function hourglassSum(arr) {}
