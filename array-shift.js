@@ -1,0 +1,1 @@
+function rotLeft(a, d) {}
